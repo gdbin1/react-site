@@ -9,7 +9,7 @@ import Layout from "./compo/Login";
 function App() {
   return (
     <>
-      <h1>✨✨✨과제방✨✨✨</h1>
+      <h1>과제방</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/react-site/" element={<Layout />} />
