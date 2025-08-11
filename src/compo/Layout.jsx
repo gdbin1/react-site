@@ -17,6 +17,6 @@ function Layout() {
             </nav>
             <Outlet></Outlet>
         </div>
-    )
+    );
 }
 export default Layout;
