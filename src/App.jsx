@@ -12,9 +12,9 @@ function App() {
       <h1>✨✨✨과제방✨✨✨</h1>
       <BrowserRouter>
         <Routes>
-          <Route path="/proj-0810/" element={<Layout />} />
+          <Route path="/" element={<Layout />} />
           <Route index element={<Home />} />
-          <Route path="/proj-0810/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
