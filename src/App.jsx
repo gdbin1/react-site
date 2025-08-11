@@ -2,9 +2,9 @@ import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 // import { useState } from "react";
 import './App.css'
-import Login from "./compo/Layout";
-import Home from "./compo/Home";
-import Layout from "./compo/Login";
+import Login from "./compo/Layout.jsx";
+import Home from "./compo/Home.jsx";
+import Layout from "./compo/Login.jsx";
 
 function App() {
   return (
