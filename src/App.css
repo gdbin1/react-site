@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,24 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.gaegu-korean {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 200%;
+}
+
+.single-day-english {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-image: url("../image/background.avif/");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }

@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function Layout() {
     return (
-        <div>
+        <div className="gaegu-korean">
             <h2>홈 페이지</h2>
             <nav>
                 <ul>

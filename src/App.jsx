@@ -10,7 +10,7 @@ import Work1 from "./compo/Work1.jsx";
 function App() {
   return (
     <>
-      <h1>과제방</h1>
+      <h1 className="gaegu-korean">가빈 react과제방</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/react-site/" element={<Layout />} />
