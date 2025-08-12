@@ -5,6 +5,7 @@ import './App.css'
 import Login from "./compo/Login.jsx";
 import Home from "./compo/Home.jsx";
 import Layout from "./compo/Layout.jsx";
+import Work1 from "./compo/Work1.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/react-site/" element={<Layout />} />
           <Route index element={<Home />} />
           <Route path="/react-site/login" element={<Login />} />
+          <Route path="/react-site/work1" element={<Work1 />} />
         </Routes>
       </BrowserRouter>
     </>
