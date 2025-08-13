@@ -48,4 +48,4 @@ const Work1 = () => {
     );
 };
 
-export default Work1; <h1>8월12일 과제</h1>
+export default Work1;
