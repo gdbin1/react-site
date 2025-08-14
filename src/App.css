@@ -63,3 +63,9 @@ body {
   background-size: cover;
 
 }
+
+.conanstyle {
+  background-image: url("../image/conan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
