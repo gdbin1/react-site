@@ -10,16 +10,16 @@ const Work3 = () => {
     const [count1, setCount1] = useState(0)
     const keypress = useCallback((e) => {
         if (e.key === "ArrowUp") {
-            setMessage("위쪽 키 눌렀죠?")
+            setMessage("위쪽 키 눌렀죠!?")
         }
         else if (e.key === "ArrowDown") {
-            setMessage("아래쪽 키 눌렀죠?")
+            setMessage("아래쪽 키 눌렀죠!?")
         }
         else if (e.key === "ArrowLeft") {
-            setMessage("왼쪽 키 눌렀죠?")
+            setMessage("왼쪽 키 눌렀죠!?")
         }
         else if (e.key === "ArrowRight") {
-            setMessage("오른쪽 키 눌렀죠?")
+            setMessage("오른쪽 키 눌렀죠!?")
         }
         if (e.key === "ArrowUp") {
             setCount1((prev) => prev + 1)
@@ -49,7 +49,7 @@ const Work3 = () => {
             <button onClick={scallback}>+1 증가</button>
             <hr />
             <div className='conanstyle'>
-                <p className='gaegu-korean'>방향키 누른거 다맞춥니다</p>
+                <p className='gaegu-korean'>방향키 <span style={{color:'white'}}>누른거 다</span> 맞춥니다</p>
                 <p className='gaegu-korean'>정답은: {message}</p>
             </div>
             <hr />
