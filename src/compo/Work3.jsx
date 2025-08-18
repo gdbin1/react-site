@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { useRef } from 'react';
 
 const Work3 = () => {
     const [count, setCount] = useState(0)
@@ -6,6 +7,13 @@ const Work3 = () => {
         setCount((prev) => prev + 1)
     }, [])
     // ---
+    // 교재 useEffect
+    const [count3, setCount3] = useState(0)
+    // 교재 useRef
+    const inputElem = useRef(null)
+    const onButtonClick = () => {
+        inputElem.current.focus()
+    }
     const [message, setMessage] = useState("")
     const [count1, setCount1] = useState(0)
     const keypress = useCallback((e) => {
@@ -42,6 +50,9 @@ const Work3 = () => {
             console.log
         }
     }, [keypress])
+    useEffect(() => {
+        document.title = `총 ${count3} 번 클릭함`
+    })
     return (
         <>
             <p className='gaegu-korean'>react 훅 usecallback = 함수를 기억하는 훅(memo)와 비슷</p>
@@ -49,7 +60,7 @@ const Work3 = () => {
             <button onClick={scallback}>+1 증가</button>
             <hr />
             <div className='conanstyle'>
-                <p className='gaegu-korean'>방향키 <span style={{color:'white'}}>누른거 다</span> 맞춥니다</p>
+                <p className='gaegu-korean'>방향키 <span style={{ color: 'white' }}>누른거 다</span> 맞춥니다</p>
                 <p className='gaegu-korean'>정답은: {message}</p>
             </div>
             <hr />
@@ -58,6 +69,16 @@ const Work3 = () => {
             <p className='gaegu-korean'>왼쪽 방향키는 *2</p>
             <p className='gaegu-korean'>오른쪽은 / 2</p>
             <p className='gaegu-korean'>결과: {count1}</p>
+            <hr />
+            <p className='gaegu-korean'>교재 useEffect 총 {count3}번 클릭함</p>
+            <button onClick={() => setCount3(count3 + 1)}>버튼</button>
+            <hr />
+            <p className='gaegu-korean'>교재 useRef</p>
+            <input ref={inputElem}
+                type='text'
+                placeholder='버튼 클릭시 여기로 자동 포커싱됨' />
+            <button onClick={onButtonClick}>버튼</button>
+
 
         </>
     );
