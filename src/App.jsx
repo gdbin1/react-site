@@ -10,6 +10,16 @@ import Work2 from "./compo/Work2.jsx";
 import Work3 from "./compo/Work3.jsx";
 import Work4 from "./compo/Work4.jsx";
 
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import styled from 'styled-components'
+// import PostViewPage from "./pages/PostViewPage.jsx";
+// import PostWritePage from "./pages/PostWritePage.jsx";
+// import MainPage from "./pages/MainPage.jsx";
+
+// const MainTitleText = styled.p`
+//     font-size: 24px;
+//     font-weight: bold;
+//     text-align: center;`;
 function App() {
   return (
     <>
@@ -23,6 +33,20 @@ function App() {
           <Route path="/react-site/work2" element={<Work2 />} />
           <Route path="/react-site/work3" element={<Work3 />} />
           <Route path="/react-site/work4" element={<Work4 />} />
+
+
+          {/* <Route
+            index
+            element={<MainPage />}
+          />
+          <Route
+            path='post-write'
+            element={<PostWritePage />}
+          />
+          <Route
+            path='post/:postId'
+            element={<PostViewPage />}
+          /> */}
         </Routes>
       </BrowserRouter>
     </>
