@@ -38,12 +38,12 @@ const Nav = () => {
                     <li>
                         <Link to="/miniblog">MiniBlog</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/miniblog/post-write">PostWritePage</Link>
                     </li>
                     <li>
                         <Link to="/miniblog/post/:postId">PostViewPage</Link>
-                    </li>
+                    </li> */}
 
                 </ul>
             </nav>

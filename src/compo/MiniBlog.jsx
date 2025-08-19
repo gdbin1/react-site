@@ -11,7 +11,6 @@ const MainTitleText = styled.p`
 function Miniblog(props) {
     return (
         <>
-        test
             <MainTitleText>소플의 미니 블로그</MainTitleText>
             <Outlet />
         </>

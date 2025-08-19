@@ -15,16 +15,26 @@ import Nav from "./Nav.jsx";
 import MainPage from "./pages/MainPage.jsx";
 import PostViewPage from "./pages/PostViewPage.jsx";
 import PostWritePage from "./pages/PostWritePage.jsx";
-// import styled from 'styled-components'
 
-// const MainTitleText = styled.p`
+import { createGlobalStyle } from 'styled-components';
+// import TextCursor from "./TextCursor.jsx";
+
+// import styled from 'styled-components'
+// const GlobalCursorStyle = createGlobalStyle`
+//  body {
+//     cursor: url('/ren_02.cur'), pointer, auto; 
+//   }`;
+// const MainTitleText = styled.p
 //     font-size: 24px;
 //     font-weight: bold;
 //     text-align: center;`;
 function App() {
   return (
     <>
-      <h1 className="gaegu-korean">가빈 react과제방</h1>
+ 
+        {/* <GlobalCursorStyle /> */}
+        <h1 className="gaegu-korean">가빈 react과제방</h1>
+        {/* <TextCursor /> */}
 
       <BrowserRouter>
 
