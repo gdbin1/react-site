@@ -31,7 +31,7 @@ function App() {
         <MainContent>
           <Nav />
           <Routes>
-            <Route path="/" element={<Layout />} />
+            <Route path="/react-site" element={<Layout />} />
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="work1" element={<Work1 />} />
