@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router';
 import styled from 'styled-components';
 import PostList from '../lists/PostList';
 import Button from '../ul/Button';
-import data from '../../data.json';
+import data from '../data.json';
 
 const Wrapper = styled.div`
 padding: 16px;
@@ -36,13 +36,13 @@ function MainPage(props) {
                 <Button
                     title='글 작성하기'
                     onclick={() => {
-                        navigate('/post-write');
+                        navigate('post-write');
                     }}
                 />
                 <PostList
                     posts={data}
                     onClickItem={(item) => {
-                        navigate(`/post/${item.id}`);
+                        navigate(`post/${item.id}`);
                     }}
                 />
             </Container>

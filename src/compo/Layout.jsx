@@ -10,19 +10,22 @@ function Layout() {
                         <Link to="/react-site">Home</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/login">Login</Link>
+                        <Link to="login">Login</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/work1">Day_0812</Link>
+                        <Link to="work1">Day_0812</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/work2">Day_0813</Link>
+                        <Link to="work2">Day_0813</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/work3">Day_0814</Link>
+                        <Link to="work3">Day_0814</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/work4">Day_0818</Link>
+                        <Link to="work4">Day_0818</Link>
+                    </li>
+                    <li>
+                        <Link to="Miniblog">MiniBlog</Link>
                     </li>
 
                 </ul>

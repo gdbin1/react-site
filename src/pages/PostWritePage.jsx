@@ -26,7 +26,9 @@ function PostWritePage(props) {
     const [content, setContent] = useState('');
 
     return (
-        <Wrapper>
+        <>
+        test postwrite
+            <Wrapper>
             <Container>
                 <TextInput
                     height={20}
@@ -50,6 +52,33 @@ function PostWritePage(props) {
                 />
             </Container>
         </Wrapper>
+
+
+        </>
+        // <Wrapper>
+        //     <Container>
+        //         <TextInput
+        //             height={20}
+        //             value={title}
+        //             onChange={(event) => {
+        //                 setTitle(event.target.value);
+        //             }}
+        //         />
+        //         <TextInput
+        //             height={480}
+        //             value={content}
+        //             onChange={(event) => {
+        //                 setContent(event.target.value);
+        //             }}
+        //         />
+        //         <Button
+        //             title='글 작성하기'
+        //             onClick={() => {
+        //                 navigate('/');
+        //             }}
+        //         />
+        //     </Container>
+        // </Wrapper>
     );
 }
 export default PostWritePage

@@ -1,9 +1,9 @@
 import { useNavigate, useParams } from "react-router";
 import styled from 'styled-components';
-import CommentList from '../lists/CommentList';
+import CommentList from '../lists/Commenetist';
 import TextInput from '../ul/TextInput';
 import Button from '../ul/Button';
-import data from '../../data.json';
+import data from '../data.json';
 import { useState } from "react";
 
 const Wrapper = styled.div`
