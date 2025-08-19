@@ -31,14 +31,16 @@ function App() {
         <MainContent>
           <Nav />
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/react-site" element={<Layout />} />
-            <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
-            <Route path="work1" element={<Work1 />} />
-            <Route path="work2" element={<Work2 />} />
-            <Route path="work3" element={<Work3 />} />
-            <Route path="work4" element={<Work4 />} />
-            <Route path="miniblog" element={<Miniblog />} >
+            <Route path="/login" element={<Login />} />
+            <Route path="/work1" element={<Work1 />} />
+            <Route path="/work2" element={<Work2 />} />
+            <Route path="/work3" element={<Work3 />} />
+            <Route path="/work4" element={<Work4 />} />
+
+
+            <Route path="/miniblog" element={<Miniblog />} >
               <Route index element={<MainPage />} />
               <Route path='post-write' element={<PostWritePage />} />
               <Route path='post/:postId' element={<PostViewPage />} />

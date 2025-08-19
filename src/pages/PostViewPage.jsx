@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from 'styled-components';
 import CommentList from '../lists/Commenetist';
 import TextInput from '../ul/TextInput';
@@ -52,7 +52,7 @@ function PostViewPage(props) {
             <Container>
                 <Button
                     title='뒤로 가기'
-                    onclick={() => {
+                    onClick={() => {
                         navigate('/');
                     }}
                 />

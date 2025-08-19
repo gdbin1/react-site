@@ -18,31 +18,31 @@ const Nav = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/react-site">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="login">Login</Link>
+                        <Link to="/login">Login</Link>
                     </li>
                     <li>
-                        <Link to="work1">Day_0812</Link>
+                        <Link to="/work1">Day_0812</Link>
                     </li>
                     <li>
-                        <Link to="work2">Day_0813</Link>
+                        <Link to="/work2">Day_0813</Link>
                     </li>
                     <li>
-                        <Link to="work3">Day_0814</Link>
+                        <Link to="/work3">Day_0814</Link>
                     </li>
                     <li>
-                        <Link to="work4">Day_0818</Link>
+                        <Link to="/work4">Day_0818</Link>
                     </li>
                     <li>
-                        <Link to="miniblog">MiniBlog</Link>
+                        <Link to="/miniblog">MiniBlog</Link>
                     </li>
                     <li>
-                        <Link to="post-write">PostWritePage</Link>
+                        <Link to="/miniblog/post-write">PostWritePage</Link>
                     </li>
                     <li>
-                        <Link to="post/:postId">PostViewPage</Link>
+                        <Link to="/miniblog/post/:postId">PostViewPage</Link>
                     </li>
 
                 </ul>

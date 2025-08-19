@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import styled from 'styled-components'
 import TextInput from "../ul/TextInput";
 import Button from "../ul/Button";
