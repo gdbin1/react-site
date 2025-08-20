@@ -24,8 +24,11 @@ function Layout() {
                     <li>
                         <Link to="work4">Day_0818</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="Miniblog">MiniBlog</Link>
+                    </li> */}
+                     <li>
+                        <Link to="WebDisign1">WebDisign_1</Link>
                     </li>
 
                 </ul>

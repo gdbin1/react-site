@@ -17,6 +17,7 @@ import PostViewPage from "./pages/PostViewPage.jsx";
 import PostWritePage from "./pages/PostWritePage.jsx";
 
 import { createGlobalStyle } from 'styled-components';
+import WebDisign1 from "./compo/WebDisign1.jsx";
 // import TextCursor from "./TextCursor.jsx";
 
 // import styled from 'styled-components'
@@ -31,24 +32,25 @@ import { createGlobalStyle } from 'styled-components';
 function App() {
   return (
     <>
- 
-        {/* <GlobalCursorStyle /> */}
-        <h1 className="gaegu-korean">가빈 react과제방</h1>
-        {/* <TextCursor /> */}
+
+      {/* <GlobalCursorStyle /> */}
+      <h1 className="gaegu-korean">가빈 react과제방</h1>
+      {/* <TextCursor /> */}
 
       <BrowserRouter>
-
         <MainContent>
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/react-site" element={<Layout />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/work1" element={<Work1 />} />
-            <Route path="/work2" element={<Work2 />} />
-            <Route path="/work3" element={<Work3 />} />
-            <Route path="/work4" element={<Work4 />} />
 
+            <Route path="/react-site" element={<Layout />} >
+              <Route path="login" element={<Login />} />
+              <Route path="work1" element={<Work1 />} />
+              <Route path="work2" element={<Work2 />} />
+              <Route path="work3" element={<Work3 />} />
+              <Route path="work4" element={<Work4 />} />
+              <Route path="WebDisign1" element={<WebDisign1 />} />
+            </Route>
 
             <Route path="/miniblog" element={<Miniblog />} >
               <Route index element={<MainPage />} />
